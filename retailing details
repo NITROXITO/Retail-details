@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int transportID[10]; // declare an array to store transport IDs
+  string modeOfTransport[10]; // declare an array to store modes of transport
+
+  // loop through the arrays to get input from the user
+  for (int i = 0; i < 10; i++) {
+    cout << "Enter Transport ID #" << i+1 << ": ";
+    cin >> transportID[i];
+    cout << "Enter Mode of Transport for ID #" << i+1 << ": ";
+    cin >> modeOfTransport[i];
+  }
+
+  // loop through the arrays to display the information
+  cout << "\nTransport ID\tMode of Transport\n";
+  for (int i = 0; i < 10; i++) {
+    cout << transportID[i] << "\t\t" << modeOfTransport[i] << endl;
+  }
+
+  return 0;
+}
